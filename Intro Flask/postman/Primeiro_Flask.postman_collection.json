@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "014d38cc-afda-44c5-a4ec-e0a3d284f6f5",
+		"name": "Primeiro_Flask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5424777"
+	},
+	"item": [
+		{
+			"name": "Via CEP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/01001000/json/",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"01001000",
+						"json",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rest_country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/name/brazil",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"name",
+						"brazil"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemon/pikachu",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon",
+						"pikachu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gatos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.thecatapi.com/v1/images/search",
+					"protocol": "https",
+					"host": [
+						"api",
+						"thecatapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"images",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hello_world",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/sabores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/sabores",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"sabores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adicionar_sabor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sabor\": \"morango\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/adicionar_sabor",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"adicionar_sabor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apagar um sabor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/apagar_sabor?sabor=chocolate",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"apagar_sabor"
+					],
+					"query": [
+						{
+							"key": "sabor",
+							"value": "chocolate"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sabor especifico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/sabor/0",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"sabor",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
